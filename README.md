@@ -22,3 +22,6 @@ In the context of revolutionizing the online shopping experience, our project, n
 •	Seamless Integration with Online Stores: FIT-CHECK seamlessly integrates with existing online clothing stores, allowing users to browse and select clothing items directly from their preferred retailers.
 •	Enhanced User Interface: The software features an intuitive user interface that enhances usability and accessibility, ensuring a smooth and engaging shopping experience for users.
 •	FIT-CHECK aims to redefine the online shopping experience by leveraging technology to provide users with a highly immersive and personalized virtual fitting room solution. By combining advanced AI algorithms with user-centric design principles, FIT-CHECK seeks to empower users to explore and express their unique sense of style in a digital environment.
+
+![2c8a5e44-c918-4763-ab75-6d10a3964698](https://github.com/user-attachments/assets/a9918956-ea20-44e9-a870-83748d6a9fcf)
+![d47f68b7-e615-4a6e-9648-c2c96202826e](https://github.com/user-attachments/assets/dcba15ea-2c86-4ffb-b172-19ea8fa8ce4d)
