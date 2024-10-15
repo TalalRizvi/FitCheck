@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitCheck - Home</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2F3E46;
+            color: #FFFFFF;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #000000;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            color: #FFFFFF;
+            font-size: 1.5em;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex: 2;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #84A98C;
+        }
+
+        /* Main banner section */
+        .banner {
+            background-color: #52796F;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+        }
+
+        .banner p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        .Login button {
+            background-color: #FFFFFF;
+            color: #2F3E46;
+            border: none;
+            border-radius: 25px;
+            padding: 8px 15px;
+            font-size: 0.5em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .Login button:hover {
+            background-color: #84A98C;
+            color: white;
+        }
+
+        .banner button {
+            background-color: #FFFFFF;
+            color: #2F3E46;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .banner button:hover {
+            background-color: #84A98C;
+            color: white;
+        }
+
+        /* Section with information */
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #354F52;
+            color: #FFFFFF;
+        }
+
+        .info-section div {
+            width: 30%;
+            background-color: #2F3E46;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #FFFFFF;
+        }
+
+        .info-section p {
+            font-size: 1em;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-section div {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">FitCheck</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Use Cases</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="Login">
+            <button onclick="window.location.href='login_signup.html'">Log In</button>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Main banner section -->
+    <div class="banner">
+        <h1>Experience the Future of Fashion</h1>
+        <p>Blend the physical and virtual with FitCheck's immersive virtual try-on technology.</p>
+        <button onclick="window.location.href='avatar_creation.html'">Get Started</button>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+        <div>
+            <h3>Virtual Try-On</h3>
+            <p>See how our virtual try-on can transform online shopping experiences.</p>
+        </div>
+        <div>
+            <h3>Fashion Meets Tech</h3>
+            <p>Innovative technology to bring fashion to the digital world.</p>
+        </div>
+        <div>
+            <h3>Success Stories</h3>
+            <p>Read about how top brands are using FitCheck to revolutionize shopping.</p>
+        </div>
+    </div>
+
+</body>
+</html>

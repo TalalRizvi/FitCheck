@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitCheck - Login / Signup</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2F3E46;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around; /* This adds space around the forms */
+            width: 900px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(132, 169, 140, 0.2);
+        }
+
+        .form-box {
+            width: 45%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 0 10px; /* This adds horizontal space between the login and signup forms */
+        }
+
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #FFFFFF;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            background-color: #354F52;
+            color: #FFFFFF;
+            font-size: 1rem;
+        }
+
+        .button {
+            width: 100%;
+            background-color: #84A98C;
+            color: #2F3E46;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #52796F;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #84A98C;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit" class="button">Login</button>
+                <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST">
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <button type="submit" class="button">Sign Up</button>
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
